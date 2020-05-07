@@ -2,9 +2,11 @@ const express = require('express');
 const helmet =  require('helmet');
 
 const server = express();
- 
-server.use(express.json());
+
+//Global Middleware
 server.use(helmet());
+server.use(express.json());
+
 
 // server.use('/cars', carsRouter);
 server.use('/', (req, res) => {
