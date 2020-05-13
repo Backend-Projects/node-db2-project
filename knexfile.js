@@ -8,6 +8,12 @@ module.exports = {
     },
     //always necessary when using SQLite3
     useNullAsDefault: true,
+    migrations: {
+      directory: './data/migrations',
+    },
+    seeds: {
+      directory: './data/seeds',
+    },
   },
 
   staging: {
