@@ -6,6 +6,8 @@ module.exports = {
     connection: {
       filename: './data/car-dealer.db3', // this filepath needs to be written from the perspective of the root folder
     },
+    //always necessary when using SQLite3
+    useNullAsDefault: true,
   },
 
   staging: {
